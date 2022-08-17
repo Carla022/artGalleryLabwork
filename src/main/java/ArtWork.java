@@ -1,13 +1,13 @@
 public class ArtWork {
 
     private String title;
-    private Artist artist;
+    private String artistName;
     private int price;
     private int nft;
 
-    public ArtWork(String title, Artist artist, int price, int nft){
+    public ArtWork(String title, String artistName , int price, int nft){
         this.title = title;
-        this.artist = artist;
+        this.artistName = artistName;
         this.price = price;
         this.nft = nft;
     }
@@ -21,12 +21,12 @@ public class ArtWork {
 
     }
 
-    public Artist getArtist(){
-        return artist;
+    public String getArtist(){
+        return artistName;
     }
 
     public void setArtist(){
-        this.artist = artist;
+        this.artistName = artistName;
     }
 
     public int getPrice(){
