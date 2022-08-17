@@ -5,6 +5,13 @@ public class ArtWork {
     private int price;
     private int nft;
 
+    public ArtWork(String title, Artist artist, int price, int nft){
+        this.title = title;
+        this.artist = artist;
+        this.price = price;
+        this.nft = nft;
+    }
+
     public String getTitle (){
         return title;
     }
@@ -18,13 +25,24 @@ public class ArtWork {
         return artist;
     }
 
+    public void setArtist(){
+        this.artist = artist;
+    }
 
+    public int getPrice(){
+        return price;
+    }
 
+    public void setPrice(){
+        this.price = price;
+    }
 
+    public int getNft(){
+        return nft;
+    }
 
-
-
-
-//    this.id = (int)Math.floor(Math.random() * (max - min + 1) + min);
+    public void setNft(){
+        this.nft = nft;
+    }
 
 }
