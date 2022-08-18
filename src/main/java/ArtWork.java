@@ -2,7 +2,7 @@ public class ArtWork {
 
     private String title;
     private String artistName;
-    private int price;
+    private static int price;
     private int nft;
 
     public ArtWork(String title, String artistName , int price, int nft){
@@ -29,7 +29,7 @@ public class ArtWork {
         this.artistName = artistName;
     }
 
-    public int getPrice(){
+    public static int getPrice(){
         return price;
     }
 
